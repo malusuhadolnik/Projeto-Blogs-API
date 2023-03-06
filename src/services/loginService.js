@@ -1,12 +1,12 @@
 const { User } = require('../models');
 
-const validateUserLogin = async ( email, password ) => {
-    const targetUser = await User.findOne({ where: { email, password }});
+const validateUser = async (email, password) => {
+    const targetUser = await User.findOne({ where: { email, password } });
     return targetUser;
 };
 
 module.exports = {
-    validateUserLogin,
+    validateUser,
 };
 
-//https://sequelize.org/docs/v6/core-concepts/model-querying-finders/
+// https://sequelize.org/docs/v6/core-concepts/model-querying-finders/
