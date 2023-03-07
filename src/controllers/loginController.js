@@ -22,7 +22,7 @@ module.exports = async (req, res) => {
     const token = createToken(userWithoutPassword);
 
     // Será validado que é possível fazer login com sucesso
-    res.status(200).json({ token });
+    return res.status(200).json({ token });
   } catch (err) {
     res.status(500).json({
         message: 'Something is off',
