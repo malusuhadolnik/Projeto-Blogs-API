@@ -1,6 +1,7 @@
 const { verifyToken } = require('./createToken');
 
 const validateToken = (req, res, next) => {
+  console.log(req);
     try {
         const { authorization } = req.headers;
         console.log(authorization);
