@@ -6,7 +6,7 @@ const validateEmail = async (req, res, next) => {
     const { email, password } = req.body; 
     const isFormatValid = regex.test(email);
     const userEmail = await loginService.validateUser(email, password);
-    console.log(userEmail);
+    console.log(userEmail); 
 
     if (!isFormatValid) {
       return res.status(400).json({ message: '"email" must be a valid email' });
