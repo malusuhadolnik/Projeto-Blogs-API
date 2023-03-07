@@ -11,7 +11,6 @@ const validateToken = (req, res, next) => {
         }
 
         const payload = verifyToken(authorization);
-        console.log(payload);
         req.data = payload.data;
         return next();
       } catch (err) {
