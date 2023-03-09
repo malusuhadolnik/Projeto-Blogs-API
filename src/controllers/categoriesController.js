@@ -22,7 +22,6 @@ const createCategory = async (req, res) => {
 const getAllCategories = async (_req, res) => {
   try {
   const allCategories = await categoriesService.getAllCategories();
-  console.log(allCategories);
 
   if (!allCategories) throw Error;
 
