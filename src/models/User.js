@@ -10,14 +10,14 @@ module.exports = (sequelize, DataTypes) => {
       },
       {
         timestamps: false,
-        tableName: 'users',
+        // tableName: 'users',
         underscored: true,
       },
     );
     User.associate = (models) => {
       User.hasMany(models.BlogPost, {
-        foreignKey: 'user_id', // é o nome da FK do migration blog_posts (a tabela blog_posts)
-        as: 'blog_posts',
+        foreignKey: 'userId', // é o nome da FK do migration blog_posts (a tabela blog_posts)
+        as: 'blogposts',
       });
     };
     return User;
