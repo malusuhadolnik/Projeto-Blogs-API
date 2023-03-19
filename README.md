@@ -1,4 +1,4 @@
-# Projeto Talker Manager
+# Projeto Blogs API
 
 # Sobre
 Este projeto foi desenvolvido durante o Módulo 3 - Back-End do curso de Desenvolvimento Web da Trybe.
